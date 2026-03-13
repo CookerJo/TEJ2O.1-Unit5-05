@@ -14,7 +14,7 @@ basic.showIcon(IconNames.Happy)
 // Find distance from sonar
 input.onButtonPressed(Button. A, function () {
 basic.clearScreen()
-    distance = sonar.ping( 
+distance = sonar.ping( 
     DigitalPin. P1, // Triger
     DigitalPin. P2, // Ehco
     PingUnit. Centimeters
@@ -22,3 +22,4 @@ basic.clearScreen()
 basic. showString((distance) + " cm")
 basic.showIcon(IconNames.Happy)
 })
+
