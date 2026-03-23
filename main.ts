@@ -22,4 +22,3 @@ distance = sonar.ping(
 basic. showString((distance) + " cm")
 basic.showIcon(IconNames.Happy)
 })
-
