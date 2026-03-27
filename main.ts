@@ -8,17 +8,17 @@
 // variable distance
 let distance:number = 0
 
-// Icon
+// icon
 basic.showIcon(IconNames.Happy)
 
-// Find distance from sonar
+// find distance from sonar
 input.onButtonPressed(Button. A, function () {
 basic.clearScreen()
 distance = sonar.ping( 
-    DigitalPin. P1, // Triger
-    DigitalPin. P2, // Ehco
+    DigitalPin. P1, // trigger
+    DigitalPin. P2, // echo
     PingUnit. Centimeters
 )
-basic. showString((distance) + " cm")
+basic. showString(distance.toString() + " cm")
 basic.showIcon(IconNames.Happy)
 })
